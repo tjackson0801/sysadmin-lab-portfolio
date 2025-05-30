@@ -1,0 +1,30 @@
+# Week 2: LVM Setup, User Management, and Backup (RHCSA Lab)
+
+**Goal:** 
+Build foundational system administration skills by configuring LVM storage, managing user permissions, and performing backups.
+
+**What I Did:**
+- Added a second virtual disk and partitioned it using `fdisk`
+- Created a physical volume, volume group (`vg_data`), and logical volume (`lv_data`) using LVM tools
+- Formatted the logical volume with XFS and mounted it to `/mnt/data`
+- Created users `alice` and `bob`, and a group called `devops`
+- Added both users to the `devops` group
+- Set directory permissions using `chown` and `chmod` to give group access to `/mnt/data`
+- Verified user access by switching to `alice` and creating a file inside `/mnt/data`
+- Created a compressed backup of the `/etc` directory using `tar`
+- Verified that the backup archive was successfully created and stored in the home directory
+
+**Screenshots:**
+- LVM creation (`pvcreate`, `vgcreate`, `lvcreate`)
+- Disk partitioning with `fdisk`
+- Mounted volume shown in `df -h`
+- User and group creation
+- Group permissions test (`touch test.txt` and `ls -l`)
+- Backup file existence (`etc-backup.tar.gz`)
+
+**Skills Practiced:**
+- LVM provisioning and volume management
+- User and group administration
+- Directory permission control
+- Backup and file archiving with `tar`
+- Verification of access and system configuration

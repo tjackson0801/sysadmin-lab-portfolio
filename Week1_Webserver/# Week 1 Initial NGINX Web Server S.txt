@@ -1,0 +1,23 @@
+# Week 1: Initial NGINX Web Server Setup
+
+**Goal:** 
+Install and configure a basic web server on AlmaLinux using NGINX. Validate web service status and accessibility from a browser.
+
+**What I Did:**
+- Installed NGINX with `dnf install -y nginx`
+- Enabled and started the NGINX service using `systemctl`
+- Created a custom HTML file at `/var/www/html/tylersite/index.html`
+- Verified the web server was running via `systemctl status`
+- Viewed the served webpage through a browser using the VM IP
+
+**Screenshots:**
+- NGINX status confirmation
+- Custom HTML file content
+- Browser rendering the web page
+-  Firewall config showing port 80 open
+
+**Skills Practiced:**
+- Package installation with `dnf`
+- Service management (`systemctl`)
+- Basic web hosting with NGINX
+- File editing and directory navigation
