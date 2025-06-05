@@ -1,0 +1,51 @@
+📦 Week 3: Bash & Ansible Automation
+
+
+
+
+
+
+
+🛠️ Skills Practiced:
+
+
+
+
+
+Bash scripting for service automation
+Systemd service control (systemctl)
+Ansible playbook creation and execution
+Inventory file configuration with password-based SSH
+HTML deployment via script and automation
+
+
+
+
+
+
+🔄 What I Did:
+
+
+
+
+
+This week, I automated the deployment of a basic NGINX web server using two approaches:
+
+
+
+Bash Script:
+I created and executed a custom nginx_setup.sh script that:
+Installed the NGINX package
+Created a custom directory at /var/www/html/tylersite
+Deployed a simple index.html page with the message “Deployed by Bash Script”
+Ansible Playbook:
+I built an Ansible playbook.yml to perform the same task using infrastructure-as-code:
+Installed NGINX
+Enabled and started the service
+Created the custom site directory
+Pushed a new HTML file with “Deployed by Ansible Playbook”
+
+
+
+
+Each deployment was verified by visiting the hosted page on my VM’s IP via browser.
