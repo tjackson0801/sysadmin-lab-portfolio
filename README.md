@@ -44,19 +44,22 @@ This repo documents my hands-on Linux system administration projects built using
 
 ### ✅ Week 3: Bash Automation (in progress)
 **Skills Practiced:** 
-- Bash scripting 
-- Automating package installation 
-- Directory creation and permission management 
-- Deploying a web service with one command
+- Bash scripting
+- Ansible playbook development
+- Remote Host configuration using inventory files
+- Password based SSH access
+- Service and file deployment automation
 
 **Highlights:** 
-- Created `nginx_setup.sh` to automate full NGINX setup 
-- Script configures and serves a custom HTML page 
+- Created `nginx_setup.sh` to automate full NGINX setup
+- Wrote and executed a Bash Script to install ad configure an NGINX web server 
+- Script configures and serves a custom HTML page
+- Built an Ansible playbook that replicated the Bash script functionality
+- Used a dynamic inventory file with Ansible to SSH into a remote VM and automate deployment
+- Final page displayed: 'Deployed by Ansible Playbook' 
 - Verified success via terminal and browser
 
 📷 *Screenshots included:* Script execution, HTML output, browser deployment
-
-➡️ *Upcoming:* Ansible automation to replace and expand the Bash workflow
 
 ---
 
@@ -67,6 +70,9 @@ This repo documents my hands-on Linux system administration projects built using
 - Bash
 - systemd (`systemctl`)
 - firewalld
+- tar
+- chmod/chown
+- nano
 - LVM
 - Ansible (planned)
 
